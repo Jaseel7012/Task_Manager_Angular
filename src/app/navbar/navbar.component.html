@@ -1,0 +1,76 @@
+<div class="row ">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 bg-dark text-light ">
+        <h6 class="bg-dark text-light"><strong>Task Manager <i class="fa-regular fa-circle-question float-end  mt-2"
+                    style="font-size: 18px;"></i></strong></h6>
+    </div>
+    <!-- <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 bg-dark text-light  "> </div> -->
+
+</div>
+
+<div class="container-fluid ">
+    <div class="row flex-nowrap ">
+        <div class="col-auto px-0 bg-dark">
+            <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse"
+                class="border rounded-3 p-1 text-decoration-none "><i class="bi bi-list bi-lg py-2 p-1 m-1 fa fa-bars "
+                    style="color: black;"></i> </a>
+            <hr>
+            <div id="sidebar" class="collapse collapse-horizontal show border-end">
+
+                <div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start min-vh-100">
+
+                    <!-- <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse" class="border rounded-3 p-1 text-decoration-none"><i class="bi bi-list bi-lg py-2 p-1  fa fa-bars"></i> </a>  -->
+
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate "
+                        class="button btn btn-dark" data-bs-parent="#sidebar"><i class="bi bi-bootstrap "></i><i
+                            class='fa fa-tasks' style='color: white '></i> <span> My Tasks</span> </a>
+                    
+
+                </div>
+            </div>
+        </div>
+        <main class="col ps-md-2 pt-2" style="background-color: #151414;">
+            <!-- <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse" class="border rounded-3 p-1 text-decoration-none"><i class="bi bi-list bi-lg py-2 p-1  fa fa-bars " style="color: black;"></i> </a> -->
+            
+                <div class="">
+                    <h5 class="text-light" style="display:inline">My Tasks </h5>
+                    <p class="text-light" style="display:inline; padding: 19px;">Last updated at:</p>
+                </div>
+
+            
+            <hr>
+            <button style="background-color:#151414 ;">
+                <i class="fa-solid fa-trash-can" style="color: white;"></i>
+            </button>
+
+
+            <button style="background-color: #151414;"><i class="fa-solid fa-calendar-days"
+                    style="color: white;"></i></button>
+            <select name="" id="priority" aria-placeholder="priority" class="m-3">
+                <option value="" disabled selected>Priority</option>
+                <option value="">high</option>
+                <option value="">Low</option>
+                <option value="">Medium</option>
+                <option value="">None</option>
+            </select>
+            <select name="" id="progress" class="m-2">
+                <option value="" selected>In Progress</option>
+
+            </select>
+
+            <select name="" id="owner" class="m-2">
+                <option value="">Owner</option>
+            </select>
+            <hr>
+
+
+
+
+            <div class="row">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <app-list-view></app-list-view>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+
+
+<table class="table " >
+    <thead>
+      <tr>
+        <th scope="col" ><input type="checkbox" name="" id=""></th>
+        <th scope="col" ><h6 class="headertable">Patient details</h6></th>
+        <th scope="col" ><h6 class="headertable">Location:facility-unit-room-bed</h6></th>
+        <th scope="col" ><h6 class="headertable">Test description</h6></th>
+        <th scope="col" ><h6 class="headertable">Due today <i class="fa-solid fa-arrow-down" style="color: white;"></i></h6>
+        </th>
+        <th scope="col" ><h6 class="headertable">Status</h6></th>
+        <th scope="col" ><h6 class="text-light">Comment</h6></th>
+      </tr>
+    </thead>
+    <tbody class="bordered" >
+      <tr *ngFor="let i of fetchData" >
+        <td scope="col"><input type="checkbox" name="" id=""></td>
+        <td> <h6 class="text-light">{{i[8]}} | {{i[4]}}</h6>  </td>
+        <td><h6 class="text-light">{{i[6]}}-{{i[10]}}</h6></td>
+        <td><h6 class="text-light">{{i[0]}}</h6></td>
+        <td><h6 class="text-light">{{i[1]| date : 'd MMM y hh:mm'}} </h6></td>
+        <td><h6 class="text-light">{{i[3]}}</h6></td>
+        <td><h6 class="text-light"></h6></td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
